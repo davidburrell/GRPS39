@@ -21,11 +21,14 @@
 
 DeclareAutoreadableVariables("GRPS39","gap/Capable_List3_2187.g",["Capable_3","Capable_9","Capable_27","Capable_81","Capable_243","Capable_729","Capable_2187"]);
 DeclareAutoreadableVariables("GRPS39","gap/Capable_List_6561.g",["Capable_6561"]);
-DeclareAutoreadableVariables("GRPS39","gap/Enumerated_List.g",["Enumerated_3","Enumerated_9","Enumerated_27","Enumerated_81","Enumerated_243","Enumerated_729","Enumerated_2187","Enumerated_6561"];
+DeclareAutoreadableVariables("GRPS39","gap/Enumerated_List.g",["Enumerated_3","Enumerated_9","Enumerated_27","Enumerated_81","Enumerated_243","Enumerated_729","Enumerated_2187","Enumerated_6561"]);
 DeclareGlobalFunction("ReloadGRPS39");
 DeclareGlobalFunction("CapableAndMissing");
 DeclareGlobalFunction("GRPS39_IsAvailable");
+DeclareGlobalFunction("GRPS39_AvailableMap");
+DeclareGlobalFunction("PrintClassificationTable39");
 
 DeclareGlobalFunction("AvailableGroups19683Information");
 DeclareGlobalFunction("Groups19683Information");
 DeclareGlobalFunction("GRPS39_CheckoutDescendants");
+DeclareAttribute("GRPS39_Heritage",IsGroup);

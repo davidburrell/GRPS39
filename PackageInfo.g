@@ -61,7 +61,7 @@ PackageDoc := rec(
 
 Dependencies := rec(
   GAP := ">= 4.11",
-  NeededOtherPackages := [ ],
+  NeededOtherPackages := [["sglppow","2.1"]],
   SuggestedOtherPackages := [ ],
   ExternalConditions := [ ],
 ),
