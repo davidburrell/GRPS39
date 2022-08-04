@@ -59,19 +59,23 @@ Add(available_list,[5817365894,5937876592]);
 Add(unavailable_list,[5937876593,5937876632]); #enumerated immediate descendants of 6561#1396068
 Add(unavailable_list,[5937876633,5937876644]); #enumerated immediate descendants of 6561#1396077
 
-# i:=0;
+i:=0;
+offsets:=[];
+lengths:=[];
+total:=0;
+for length in unavailable_list do
+	i:=i+1;
+	Print(StringFormatted("offset{}:={};\n",i,length[2]-length[1]+1));
+	Add(offsets,length[2]-length[1]+1);
+od;
 
-# for length in unavailable_list do
-# 	i:=i+1;
-# 	Print(StringFormatted("offset{}:={};\n",i,length[2]-length[1]+1));
-# od;
+j:=0;
 
-# j:=0;
-
-# for length in available_list do
-# 	j:=j+1;
-# 	Print(StringFormatted("length{}:={};\n",j,length[2]-length[1]+1));
-# od;
+for length in available_list do
+	j:=j+1;
+	Print(StringFormatted("length{}:={};\n",j,length[2]-length[1]+1));
+	Add(lengths,length[2]-length[1]+1);
+od;
 
 offset1:=66667;
 offset2:=3676421905;
@@ -95,6 +99,7 @@ offset19:=49815;
 offset20:=1713;
 offset21:=40;
 offset22:=12;
+
 length1:=1;
 length2:=350663;
 length3:=178696;

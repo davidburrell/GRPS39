@@ -131,7 +131,7 @@ capableMaster:=ValueGlobal(StringFormatted("Capable_{}",order));
 		# order:=order*3;
 enum_unavailable:=ValueGlobal(StringFormatted("Enumerated_{}",order));
 step:=Length(FactorsInt(3^9)) - Length(FactorsInt(order));
-Print(StringFormatted("for group_order# {},{}\n",i,offset));
+# Print(StringFormatted("for group_order# {},{}\n",i,offset));
 # initialLook:=true;
 
 for group in capableMaster do

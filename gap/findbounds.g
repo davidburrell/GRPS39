@@ -17,6 +17,8 @@ breakOuter:=false;
 
 
 #TODO it makes sense to have a better idea of when the split happens i.e. if 20 <= i <= 40 then only load Capable_27 etc...
+offsets:=[];
+lengths:=[];
 
 for group_order in capableMaster do
 	order:=order*3;

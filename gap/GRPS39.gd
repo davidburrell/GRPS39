@@ -27,6 +27,7 @@ DeclareGlobalFunction("CapableAndMissing");
 DeclareGlobalFunction("GRPS39_IsAvailable");
 DeclareGlobalFunction("GRPS39_AvailableMap");
 DeclareGlobalFunction("PrintClassificationTable39");
+DeclareGlobalFunction("GRPS39NumDescendants");
 
 DeclareGlobalFunction("AvailableGroups19683Information");
 DeclareGlobalFunction("Groups19683Information");
