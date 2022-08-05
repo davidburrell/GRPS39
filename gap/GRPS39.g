@@ -33,7 +33,7 @@ SMALL_GROUP_FUNCS[ pos_3_9 ] := function( size, n, inforec )
         Error("there are just ",inforec.number," groups of order ",size );
     fi;
 
-    if n < inforec.number then
+    if n <= inforec.number then
 	# capableMaster:=[];
 	# toRead:=StringFormatted("gap/CapableList3_256.g");
 
@@ -121,7 +121,15 @@ order:=6561;
 else
 #n = 5937876645 then
 #this is the elementary abelian group of order 3^9
-return ElementaryAbelianGroup(3^9);
+		# toReturn:=ElementaryAbelianGroup(1024);
+		# SetGRPS1024_Heritage(toReturn,[1,1,1]);
+
+		# return toReturn;
+	toReturn:=ElementaryAbelianGroup(3^9);
+	SetGRPS39_Heritage(toReturn,[1,1,1]);
+
+		# return ElementaryAbelianGroup(3^9);
+	return toReturn;
 fi;
 
 	# 		Add(capableMaster,ValueGlobal(StringFormatted("Capable_{}",j)));

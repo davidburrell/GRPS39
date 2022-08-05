@@ -26,6 +26,7 @@ DeclareGlobalFunction("ReloadGRPS39");
 DeclareGlobalFunction("CapableAndMissing");
 DeclareGlobalFunction("GRPS39_IsAvailable");
 DeclareGlobalFunction("GRPS39_AvailableMap");
+DeclareGlobalFunction("PrintAvailableClassificationTable39");
 DeclareGlobalFunction("PrintClassificationTable39");
 DeclareGlobalFunction("GRPS39NumDescendants");
 
@@ -33,3 +34,4 @@ DeclareGlobalFunction("AvailableGroups19683Information");
 DeclareGlobalFunction("Groups19683Information");
 DeclareGlobalFunction("GRPS39_CheckoutDescendants");
 DeclareAttribute("GRPS39_Heritage",IsGroup);
+DeclareGlobalFunction("FixGroupDescendants");

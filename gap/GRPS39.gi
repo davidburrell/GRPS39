@@ -9,6 +9,7 @@ BindGlobal("GRPS39_AVAIL",203045160);
 
 
 InstallGlobalFunction("AvailableGroups19683Information",function()
+
 #######################Immediate Descendants of order 27#############
 #Available Groups 1-1 have rank 3 and pclass 2
 #######################Immediate Descendants of order 243#############
@@ -40,14 +41,97 @@ InstallGlobalFunction("AvailableGroups19683Information",function()
 #Available Groups 85262451-85266440 have rank 3 and pclass 6
 #Available Groups 85266441-85266465 have rank 3 and pclass 7
 #Available Groups 85266466-87273520 have rank 4 and pclass 3
-# Available Groups 87273521-101985068 have rank 4 and pclass 4
-# Available Groups 101985069-102012675 have rank 4 and pclass 5
-# Available Groups 102012676-102012725 have rank 4 and pclass 6
-
+#Available Groups 87273521-101985068 have rank 4 and pclass 4
+#Available Groups 101985069-102012675 have rank 4 and pclass 5
+#Available Groups 102012676-102012725 have rank 4 and pclass 6
+#Available Groups 102012726-202463739 have rank 5 and pclass 3
+#Available Groups 202463740-202981757 have rank 5 and pclass 4
+#Available Groups 202981758-202981836 have rank 5 and pclass 5
+#Available Groups 202981837-203045042 have rank 6 and pclass 3
+#Available Groups 203045043-203045152 have rank 6 and pclass 4
+#Available Groups 203045153-203045159 have rank 7 and pclass 3
+################  Immediate Descendants of the trivial group  ####
+#Available Group 203045159 has rank 9 and pclass 1
 
 end);
 
 InstallGlobalFunction("Groups19683Information",function()
+
+######################Immediate Descendants of order 27#############
+Groups 1-1 have rank 3 and pclass 2 
+Groups 2-66668 have rank 4 and pclass 2 ########### Enumerated 81#15
+
+######################Immediate Descendants of order 243#############
+Groups 66669-66679 have rank 2 and pclass 3
+Groups 66680-417331 have rank 3 and pclass 3 
+Groups 417332-3676839236 have rank 5 and pclass 2 ########### Enumerated 243#67
+
+######################Immediate Descendants of order 729#############
+Groups 3676839237-3676839273 have rank 2 and pclass 4
+Groups 3676839274-3677017932 have rank 3 and pclass 3 
+Groups 3677017933-3765012316 have rank 3 and pclass 3 ########### Enumerated 729#122
+Groups 3765012317-3765064510 have rank 3 and pclass 3
+Groups 3765064511-3765352301 have rank 4 and pclass 3 
+Groups 3765352302-3882837164 have rank 4 and pclass 3 ########### Enumerated 729#425
+Groups 3882837165-3900892925 have rank 4 and pclass 3 ########### Enumerated 729#440
+Groups 3900892926-3931273585 have rank 4 and pclass 3 ########### Enumerated 729#453
+Groups 3931273586-3943394284 have rank 4 and pclass 3 
+Groups 3943394285-5163504924 have rank 6 and pclass 2 ########### Enumerated 729#504
+
+######################Immediate Descendants of order 2187#############
+Groups 5163504925-5163505616 have rank 2 and pclass 4
+Groups 5163505617-5163509316 have rank 2 and pclass 5
+Groups 5163509317-5163889338 have rank 3 and pclass 3
+Groups 5163889339-5164079738 have rank 3 and pclass 4
+Groups 5164079739-5164084166 have rank 3 and pclass 5
+Groups 5164084167-5168202147 have rank 4 and pclass 3 
+Groups 5168202148-5175244174 have rank 4 and pclass 3 ########### Enumerated 2187#6044
+Groups 5175244175-5198614341 have rank 4 and pclass 3 
+Groups 5198614342-5211329620 have rank 4 and pclass 3 ########### Enumerated 2187#6576
+Groups 5211329621-5232736733 have rank 4 and pclass 3
+Groups 5232736734-5232874449 have rank 4 and pclass 4 
+Groups 5232874450-5232874580 have rank 5 and pclass 3 ########### Enumerated 2187#9093
+Groups 5232874581-5246141806 have rank 5 and pclass 3 
+Groups 5246141807-5263238503 have rank 5 and pclass 3 ########### Enumerated 2187#9118
+Groups 5263238504-5304287355 have rank 5 and pclass 3 ########### Enumerated 2187#9121
+Groups 5304287356-5310952326 have rank 5 and pclass 3 
+Groups 5310952327-5323685281 have rank 5 and pclass 3 ########### Enumerated 2187#9128
+Groups 5323685282-5651818279 have rank 5 and pclass 3 ########### Enumerated 2187#9131
+Groups 5651818280-5701388011 have rank 5 and pclass 3 ########### Enumerated 2187#9134
+Groups 5701388012-5800318009 have rank 5 and pclass 3 ########### Enumerated 2187#9135
+Groups 5800318010-5813058703 have rank 5 and pclass 3 ########### Enumerated 2187#9138
+Groups 5813058704-5817314365 have rank 5 and pclass 3 ########### Enumerated 2187#9140
+Groups 5817314366-5817364180 have rank 6 and pclass 3 ########### Enumerated 2187#9302
+Groups 5817364181-5817365893 have rank 7 and pclass 2 ########### Enumerated 2187#9310
+
+######################Immediate Descendants of order 6561#############
+Groups 5817365894-5817365894 have rank 1 and pclass 9
+Groups 5817365895-5817366584 have rank 2 and pclass 4
+Groups 5817366585-5817373935 have rank 2 and pclass 5
+Groups 5817373936-5817378061 have rank 2 and pclass 6
+Groups 5817378062-5817379045 have rank 2 and pclass 7
+Groups 5817379046-5817379053 have rank 2 and pclass 8
+Groups 5817379054-5817380658 have rank 3 and pclass 3
+Groups 5817380659-5819971545 have rank 3 and pclass 4
+Groups 5819971546-5820093883 have rank 3 and pclass 5
+Groups 5820093884-5820097873 have rank 3 and pclass 6
+Groups 5820097874-5820097898 have rank 3 and pclass 7
+Groups 5820097899-5822104953 have rank 4 and pclass 3
+Groups 5822104954-5836816501 have rank 4 and pclass 4
+Groups 5836816502-5836844108 have rank 4 and pclass 5
+Groups 5836844109-5836844158 have rank 4 and pclass 6
+Groups 5836844159-5937295172 have rank 5 and pclass 3
+Groups 5937295173-5937813190 have rank 5 and pclass 4
+Groups 5937813191-5937813269 have rank 5 and pclass 5
+Groups 5937813270-5937876475 have rank 6 and pclass 3
+Groups 5937876476-5937876585 have rank 6 and pclass 4
+Groups 5937876586-5937876592 have rank 7 and pclass 3 
+Groups 5937876593-5937876632 have rank 7 and pclass 3 ########### Enumerated 6561#1396068
+Groups 5937876633-5937876644 have rank 8 and pclass 2 ########### Enumerated 6561#1396077
+
+###############  Immediate Descendants of the trivial group  ####
+Group 5937876645 has rank 9 and pclass 1
+
 
 end);
 
@@ -244,19 +328,33 @@ return 0;
 
 end);
 
-InstallGlobalFunction("PrintClassificationTable39",function(start_id,end_id)
-  local i, currentPClass, currentRank, currentParentGroupOrder, num_siblings, working, numDescendants;
+InstallGlobalFunction("PrintAvailableClassificationTable39",function(start_id,end_id)
+  local i, currentPClass, currentRank, currentParentGroupOrder, num_siblings, working, numDescendants,finalFlag,enumeratedFlag,currentParentGroupID;
 
 # i:=1;
 i:=start_id;
 currentPClass:=0;
 currentRank:=0;
 currentParentGroupOrder:=0;
+currentParentGroupID:=0;
+enumeratedFlag:=false;
+finalFlag:=false;
 
-# while i <= end_id and i <= 5937876645 do
-while i < Minimum(end_id,GRPS39_AVAIL) do
-# # while i <= 875133 do
+
+if end_id = GRPS39_AVAIL then
+	end_id:=end_id-1;
+	finalFlag := true;
+fi;
+
+while i <= Minimum(end_id,GRPS39_AVAIL) do
+
 working:=SmallGroup(3^9,GRPS39_AvailableMap(i));
+enumeratedFlag:=false;
+
+if GRPS39_Heritage(working)[1] > 9 and GRPS39_Heritage(working)[2] in ValueGlobal(StringFormatted("Enumerated_{}",GRPS39_Heritage(working)[1])) then
+enumeratedFlag:=true;
+fi;
+	
 num_siblings:=GRPS39NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
 # Print(StringFormatted("{} - {}\n",i,i+num_siblings-1));
 
@@ -264,37 +362,189 @@ num_siblings:=GRPS39NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(w
 # working:=SmallGroup(3^9,AvailableMap(i));
 if not currentParentGroupOrder=GRPS39_Heritage(working)[1] then
 	if currentRank > 0 then
-	Print(StringFormatted("-{} have rank {} and pclass {}\n",i-1,currentRank,currentPClass));
+		if not enumeratedFlag then
+			Print(StringFormatted("-{} have rank {} and pclass {}\n",i-1,currentRank,currentPClass));
+		else
+			Print(StringFormatted("-{} have rank {} and pclass {}###########Enumerated\n",i-1,currentRank,currentPClass));
+
+		fi;
 	fi;
 
 	Print(StringFormatted("######################Immediate Descendants of order {}#############\n",GRPS39_Heritage(working)[1]));
 	currentParentGroupOrder:=GRPS39_Heritage(working)[1];
+
+	currentParentGroupID:=GRPS39_Heritage(working)[2];
+
 	currentRank:=RankPGroup(working);
 	currentPClass:=PClassPGroup(working);
 
 	Print(StringFormatted("Available Groups {}",i));
-	numDescendants:=NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
+	# numDescendants:=NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
+	# num_:=NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
 fi;
 
 if not currentRank = RankPGroup(working) or not currentPClass = PClassPGroup(working) or not currentParentGroupOrder = GRPS39_Heritage(working)[1] then
-	Print(StringFormatted("-{} have rank {} and pclass {}\n",i-1,currentRank,currentPClass));
+	if not enumeratedFlag then
+		Print(StringFormatted("-{} have rank {} and pclass {}\n",i-1,currentRank,currentPClass));
+	else
+		Print(StringFormatted("-{} have rank {} and pclass {}\n#########",i-1,currentRank,currentPClass));
+	fi;
 
+	currentParentGroupID:=GRPS39_Heritage(working)[2];
 	currentRank:=RankPGroup(working);
 	currentPClass:=PClassPGroup(working);
 
 	# Print(StringFormatted("Group {} has rank {} and pclass {}\n",AvailableMap(i),currentRank,currentPClass));
 	Print(StringFormatted("Available Groups {}",i));
-	numDescendants:=NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
+	# numDescendants:=NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
 fi;
 
 i:=i+num_siblings;
 od;
 
-
+# if not end_id
 	working:=SmallGroup(3^9,GRPS39_AvailableMap(end_id));
 	currentRank:=RankPGroup(working);
 	currentPClass:=PClassPGroup(working);
 	Print(StringFormatted("-{} have rank {} and pclass {}\n",end_id,currentRank,currentPClass));
+
+if finalFlag then
+	working:=SmallGroup(3^9,GRPS39_AvailableMap(GRPS39_AVAIL));
+	currentRank:=RankPGroup(working);
+	currentPClass:=PClassPGroup(working);
+	Print( "###############  Immediate Descendants of the trivial group  ####\n");
+	Print(StringFormatted("Available Group {} has rank {} and pclass {}\n",end_id,currentRank,currentPClass));
+
+fi;
+
+end);
+
+InstallGlobalFunction("PrintClassificationTable39",function(start_id,end_id)
+  local i, currentPClass, currentRank, currentParentGroupOrder, num_siblings, working, numDescendants,finalFlag,enumeratedFlag,currentParentGroupID;
+
+# i:=1;
+i:=start_id;
+currentPClass:=0;
+currentRank:=0;
+currentParentGroupOrder:=0;
+currentParentGroupID:=0;
+enumeratedFlag:=false;
+finalFlag:=false;
+
+if end_id = GRPS39_TOTAL then
+	end_id:=end_id-1;
+	finalFlag := true;
+fi;
+
+while i <= Minimum(end_id,GRPS39_TOTAL) do
+
+working:=SmallGroup(3^9,i);
+# enumeratedFlag:=false;
+# if enumeratedFlag then
+# 	Print(StringFormatted("\nGroups {}",i));
+# 	enumeratedFlag:= false;	
+# fi;
+
+if GRPS39_Heritage(working)[1] > 9 and GRPS39_Heritage(working)[2] in ValueGlobal(StringFormatted("Enumerated_{}",GRPS39_Heritage(working)[1])) then
+#we finish off the last ones
+	if not enumeratedFlag then
+			Print(StringFormatted("-{} have rank {} and pclass {} \n",i-1,currentRank,currentPClass));
+	 fi;
+
+	currentParentGroupOrder:=GRPS39_Heritage(working)[1];
+
+	currentParentGroupID:=GRPS39_Heritage(working)[2];
+
+	currentRank:=RankPGroup(working);
+	currentPClass:=PClassPGroup(working);
+	numDescendants:=NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
+
+	Print(StringFormatted("Groups {}-{} have rank {} and pclass {} ## not available parent group {}#{}\n",i,i+numDescendants-1,currentRank,currentPClass,currentParentGroupOrder,currentParentGroupID));
+#there are 2 issues one is if i+numDescendants has the same rank and p-class as the enumerated one
+#	skip printing this if it is the last group for that order	
+	if not currentParentGroupID = NumberSmallGroups(currentParentGroupOrder) then
+		# if 
+			working:=SmallGroup(3^9,i+numDescendants);
+			if not (GRPS39_Heritage(working)[1] > 9 and GRPS39_Heritage(working)[2] in ValueGlobal(StringFormatted("Enumerated_{}",GRPS39_Heritage(working)[1]))) then
+ 				Print(StringFormatted("Groups {}",i+numDescendants));
+			fi;
+	fi;
+
+#we now print the info for the enumerated ones
+
+enumeratedFlag:=true;
+i:=i+numDescendants;
+continue;
+
+fi;
+
+	
+num_siblings:=GRPS39NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
+
+
+# working:=SmallGroup(3^9,AvailableMap(i));
+if not currentParentGroupOrder=GRPS39_Heritage(working)[1] then
+	if currentRank > 0 then
+		if not enumeratedFlag then
+			Print(StringFormatted("-{} have rank {} and pclass {}\n",i-1,currentRank,currentPClass));
+		fi;
+	fi;
+
+	Print(StringFormatted("######################Immediate Descendants of order {}#############\n",GRPS39_Heritage(working)[1]));
+	currentParentGroupOrder:=GRPS39_Heritage(working)[1];
+
+	currentParentGroupID:=GRPS39_Heritage(working)[2];
+
+	currentRank:=RankPGroup(working);
+	currentPClass:=PClassPGroup(working);
+
+	Print(StringFormatted("Groups {}",i));
+fi;
+
+if not currentRank = RankPGroup(working) or not currentPClass = PClassPGroup(working) or not currentParentGroupOrder = GRPS39_Heritage(working)[1] then
+
+		Print(StringFormatted("-{} have rank {} and pclass {}\n",i-1,currentRank,currentPClass));
+
+	currentParentGroupID:=GRPS39_Heritage(working)[2];
+	currentRank:=RankPGroup(working);
+	currentPClass:=PClassPGroup(working);
+
+	Print(StringFormatted("Groups {}",i));
+fi;
+
+i:=i+num_siblings;
+enumeratedFlag:=false;
+od;
+
+# if not end_id
+	working:=SmallGroup(3^9,GRPS39_AvailableMap(end_id));
+	currentRank:=RankPGroup(working);
+	currentPClass:=PClassPGroup(working);
+	Print(StringFormatted("-{} have rank {} and pclass {}\n",end_id,currentRank,currentPClass));
+
+if finalFlag then
+	working:=SmallGroup(3^9,GRPS39_TOTAL);
+	currentRank:=RankPGroup(working);
+	currentPClass:=PClassPGroup(working);
+	Print( "###############  Immediate Descendants of the trivial group  ####\n");
+	Print(StringFormatted("Group {} has rank {} and pclass {}\n",GRPS39_TOTAL,currentRank,currentPClass));
+
+fi;
+
+end);
+
+InstallGlobalFunction("FixGroupDescendants",function(order,id)
+
+local step,toReturn,desc;
+
+step:=9-PrimePowersInt(order)[2];
+
+desc:=List(PqDescendants(SmallGroup(order,id):StepSize:=step),x->CodePcGroup(x));
+
+toReturn:=[Length(desc)];
+Append(toReturn,desc);
+PrintTo(StringFormatted("{}.g",id),StringFormatted("desc_{}_{}:={};",order,id,toReturn));
+# return toReturn;
 
 
 end);
