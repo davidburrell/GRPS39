@@ -222,8 +222,8 @@ SELECT_SMALL_GROUPS_FUNCS[ pos_3_9 ] := SELECT_SMALL_GROUPS_FUNCS[ 11 ];
 #
 SMALL_GROUPS_INFORMATION[ pos_3_9 ] := function( size, inforec, num )
 
-AvailableGroups19683Information();
-# Groups1024Information();
+# AvailableGroups19683Information();
+Groups19683Information();
 
 end;
 

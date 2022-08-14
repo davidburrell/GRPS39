@@ -25,27 +25,29 @@ for group_order in capableMaster do
 	enum_unavailable:=ValueGlobal(StringFormatted("Enumerated_{}",order));
 	step:=Length(FactorsInt(3^9)) - Length(FactorsInt(order));
 	new:=true;
-	Print(StringFormatted("######################Immediate Descendants of order {}#############\n",GRPS1024_Heritage(working)[1]));
+	# Print(StringFormatted("######################Immediate Descendants of order {}#############\n",GRPS1024_Heritage(working)[1]));
 	for group in group_order do
 
 			offset:=i;
 			i:=i+group[2];
 			if order=27 then
-				Print(StringFormatted("[{},{}]\n",1,1));
+				# Print(StringFormatted("[{},{}]\n",1,1));
+				Print(StringFormatted("n = 1 then \n",1,1));
 				continue;
 			fi;
 			
 			if group[1] in enum_unavailable then
 				# Print(new);
 				if not new then
-					Print(StringFormatted(",{}]\n",offset));
+					Print(StringFormatted("..{}] then \n",offset));
 				fi;
-				Print(StringFormatted("[{},{}] #enumerated immediate descendants of {}#{}\n",offset+1,i,order,group[1]));
+				Print(StringFormatted("\nelif n in [{}..{}] then\n#enumerated immediate descendants of {}#{}\n",offset+1,i,order,group[1]));
+				Print(StringFormatted("""Print("This is an immediate descendant of {}#{}")""",order,group[1]));
 				new:=true;
 				continue;
 			else 
 				if new then
-					Print(StringFormatted("[{}",offset+1));
+					Print(StringFormatted("\nelif n in [{}",offset+1));
 					
 					new := false;
 				fi;
@@ -56,7 +58,7 @@ for group_order in capableMaster do
 			# Print(StringFormatted("i = {}, ID = {}, Order = {}, Offset:={}, Next={}\n",i,group[1],order,offset,offset+group[2]));
 			
 			
-			Print(StringFormatted(",{}]\n",offset));
+			Print(StringFormatted("..{}] then\n\n",offset));
 
 	od;
 od;
