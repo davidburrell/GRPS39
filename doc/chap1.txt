@@ -1,0 +1,70 @@
+  
+  [1X1 [33X[0;0YGroups of Order 19683[133X[101X
+  
+  
+  [1X1.1 [33X[0;0YOverview[133X[101X
+  
+  [33X[0;0YThis library gives complete access to the following groups of order 19683:[133X
+  
+  [30X    [33X[0;6YThe rank 1 group[133X
+  
+  [30X    [33X[0;6YAll rank 2 groups[133X
+  
+  [30X    [33X[0;6YAll rank 3 groups with p-class not equal to 3[133X
+  
+  [30X    [33X[0;6YAll rank 4 groups with p-class at least 4[133X
+  
+  [30X    [33X[0;6YAll rank 5 groups with p-class at least 4[133X
+  
+  [30X    [33X[0;6YAll rank 6 groups with p-class at least 4[133X
+  
+  [30X    [33X[0;6YAll rank 7 groups with p-class at least 4[133X
+  
+  [30X    [33X[0;6YAll rank 8 groups with p-class at least 3[133X
+  
+  [30X    [33X[0;6YThe rank 9 group[133X
+  
+  [33X[0;0YThis  library  gives  partial  information  on the remaining groups of order
+  19683:[133X
+  
+  [30X    [33X[0;6YRank 3 groups with p-class 3[133X
+  
+  [30X    [33X[0;6YRank 4 groups with p-class 2[133X
+  
+  [30X    [33X[0;6YRank 4 groups with p-class 3[133X
+  
+  [30X    [33X[0;6YRank 5 groups with p-class 2[133X
+  
+  [30X    [33X[0;6YRank 5 groups with p-class 3[133X
+  
+  [30X    [33X[0;6YRank 6 groups with p-class 2[133X
+  
+  [30X    [33X[0;6YRank 6 groups with p-class 3[133X
+  
+  [30X    [33X[0;6YRank 7 groups with p-class 2[133X
+  
+  [30X    [33X[0;6YRank 7 groups with p-class 3[133X
+  
+  [33X[0;0YFor the groups that are not explicity available the following information is
+  available:[133X
+  
+  [30X    [33X[0;6YParent Group ID[133X
+  
+  [30X    [33X[0;6YParent Group Order[133X
+  
+  [30X    [33X[0;6Yp-class[133X
+  
+  [30X    [33X[0;6YRank[133X
+  
+  [30X    [33X[0;6YAge[133X
+  
+  [33X[0;0YThe  groups  are  sorted  first by their parent group ids and then by the pc
+  codes  of  the  standard presentations for the groups. The data contained in
+  this  library  was used in the 2022 enumeration of the groups of order 19683
+  [Bur22]. The computational tools used were developed in the 2021 enumeration
+  of  the  groups  of  order 1024 [Bur21]. The available groups were generated
+  using  the  p-group generation algorithm [O'B90] as implemented in the ANUPQ
+  package  [GNOH19].  The  information  on the remaining groups was calculated
+  using  the  cohomological  methods for enumerating p-groups as introduced in
+  [EO99].[133X
+  

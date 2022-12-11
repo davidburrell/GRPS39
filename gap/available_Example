@@ -1,0 +1,23 @@
+gap> GRPS_AVAIL;
+Error, Variable: 'GRPS_AVAIL' must have a value
+not in any function at *stdin*:2
+gap> GRPS39_AVAIL;
+203045160
+gap> GRPS39_TOTAL;
+5937876645
+gap> GRPS39_InverseAvailableMap(2);
+This is an immediate descendant of 81#150
+gap> ReloadGRPS39();
+true
+true
+true
+gap> GRPS39_InverseAvailableMap(2);
+This is an immediate descendant of 81#15 and is not available0
+gap> ReloadGRPS39();
+true
+true
+true
+gap> GRPS39_InverseAvailableMap(2);
+This is an immediate descendant of 81#15 and is not available
+0
+gap> quit;

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is an automatically generated file. -->
+<Chapter Label="Chapter_Functionality">
+<Heading>Functionality</Heading>
+
+<P/>
+<Section Label="Chapter_Functionality_Section_Methods">
+<Heading>Methods</Heading>
+
+<P/>
+ Once the package is loaded the user may call <Code>SmallGroup(1024,i)</Code> and receive either a group if available or a <Emph>partially constructed group</Emph> which has the following attributes set
+<List>
+<Item>
+p-class
+</Item>
+<Item>
+Rank
+</Item>
+<Item>
+Heritage
+</Item>
+<Item>
+Order
+</Item>
+</List>
+<P/>
+<Example><![CDATA[
+gap> SmallGroup(19683,1);
+<pc group of size 19683 with 9 generators>
+gap> G:=SmallGroup(19683,1);
+<pc group of size 19683 with 9 generators>
+gap> RankPGroup(G);
+3
+gap> PClassPGroup(G);
+2
+gap> GRPS39_Heritage(G);
+[ 27, 5, 1 ]
+gap> H:=SmallGroup(19683,2); #this is a partially constructed group
+<pc group with 0 generators>
+gap> PClassPGroup(H);
+2
+gap> RankPGroup(H);
+4
+gap> GRPS39_Heritage(H);
+[ 81, 15, 1 ]
+gap> K:=SmallGroup(19683,3); #this is a partially constructed group
+<pc group with 0 generators>
+gap> PClassPGroup(K);
+2
+gap> RankPGroup(K);
+4
+gap> GRPS39_Heritage(K);
+[ 81, 15, 2 ]
+#notice that H,K have the same parent group but their age differs
+]]></Example>
+
+
+<ManSection>
+  <Func Arg="N" Name="GRPS39_AvailableMap" />
+ <Returns><Code>int</Code>
+</Returns>
+ <Description>
+ For <Math>1 \leq i \leq 203,045,160</Math> this function will return the SmallGroup ID of the <Math>i</Math>th available group among all the groups of order 19683.
+ </Description>
+</ManSection>
+
+
+<Example><![CDATA[
+#group 1 is available
+#groups 2-66668 are not available
+#SmallGroup(19683,66668) is not available
+gap> g:=SmallGroup(19683,66668);
+<pc group with 0 generators> #this is a partially constructed group
+gap> g:=SmallGroup(19683,66669);
+<pc group of size 19683 with 9 generators> #this is an available group
+gap> GRPS39_AvailableMap(2);
+66669
+#access the ith available group of order 19683
+gap> SmallGroup(19683,GRPS39_AvailableMap(i)); #for i <= 203,045,160
+]]></Example>
+
+
+<ManSection>
+  <Func Arg="N" Name="GRPS39_InverseAvailableMap" />
+ <Returns><Code>int</Code>
+</Returns>
+ <Description>
+ For <Math>1 \leq i \leq 5,937,876,645</Math> if <Code>SmallGroup(19683,i)</Code> is available this will return its position in the available groups list or else it will print a message telling you that it is not available and return 0.
+ </Description>
+</ManSection>
+
+
+<Example><![CDATA[
+gap> GRPS39_InverseAvailableMap(GRPS39_AvailableMap(i)) = i;
+gap> GRPS39_InverseAvailableMap(2);
+This is an immediate descendant of 81#15 and is not available
+0
+]]></Example>
+
+
+<ManSection>
+  <Attr Arg="G" Name="GRPS39_Heritage" Label="for IsGroup"/>
+ <Returns><Code>list</Code>
+</Returns>
+ <Description>
+ Returns as a list the following information for a group of order 19683 loaded from the library <Code>[ParentGroupID, ParentGroupOrder, Age]</Code>. The <Emph>Age</Emph> of a group is the position of the group among its siblings in the ordered list of their standard PC codes.
+ </Description>
+</ManSection>
+
+
+<ManSection>
+  <Func Arg="arg" Name="FixGroupDescendants" />
+ <Description>
+<P/>
+ </Description>
+</ManSection>
+
+
+</Section>
+
+
+</Chapter>
+

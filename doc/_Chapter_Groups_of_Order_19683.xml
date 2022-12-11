@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This is an automatically generated file. -->
+<Chapter Label="Chapter_Groups_of_Order_19683">
+<Heading>Groups of Order 19683</Heading>
+
+<Section Label="Chapter_Groups_of_Order_19683_Section_Overview">
+<Heading>Overview</Heading>
+
+<P/>
+ This library gives complete access to the following groups of order 19683:
+<List>
+<Item>
+The rank 1 group
+</Item>
+<Item>
+All rank 2 groups
+</Item>
+<Item>
+All rank 3 groups with p-class not equal to 3
+</Item>
+<Item>
+All rank 4 groups with p-class at least 4
+</Item>
+<Item>
+All rank 5 groups with p-class at least 4
+</Item>
+<Item>
+All rank 6 groups with p-class at least 4
+</Item>
+<Item>
+All rank 7 groups with p-class at least 4
+</Item>
+<Item>
+All rank 8 groups with p-class at least 3
+</Item>
+<Item>
+The rank 9 group
+</Item>
+</List>
+<P/>
+ This library gives partial information on the remaining groups of order 19683:
+<P/>
+<List>
+<Item>
+Rank 3 groups with p-class 3 
+</Item>
+<Item>
+Rank 4 groups with p-class 2
+</Item>
+<Item>
+Rank 4 groups with p-class 3
+</Item>
+<Item>
+Rank 5 groups with p-class 2
+</Item>
+<Item>
+Rank 5 groups with p-class 3
+</Item>
+<Item>
+Rank 6 groups with p-class 2
+</Item>
+<Item>
+Rank 6 groups with p-class 3
+</Item>
+<Item>
+Rank 7 groups with p-class 2
+</Item>
+<Item>
+Rank 7 groups with p-class 3
+</Item>
+</List>
+<P/>
+ For the groups that are not explicity available the following information is available:
+<P/>
+<List>
+<Item>
+Parent Group ID
+</Item>
+<Item>
+Parent Group Order
+</Item>
+<Item>
+p-class
+</Item>
+<Item>
+Rank
+</Item>
+<Item>
+Age
+</Item>
+</List>
+<P/>
+ The groups are sorted first by their parent group ids and then by the pc codes of the standard presentations for the groups. The data contained in this library was used in the 2022 enumeration of the groups of order 19683 <Cite Key="Burrell2022a"/>. The computational tools used were developed in the 2021 enumeration of the groups of order 1024 <Cite Key="Burrell2021a"/>. The available groups were generated using the p-group generation algorithm  <Cite Key="OBrien1990a"/> as implemented in the ANUPQ package <Cite Key="Gamble2019a"/>. The information on the remaining groups was calculated using the cohomological methods for enumerating p-groups as introduced in <Cite Key="Eick1999a"/>.
+<P/>
+</Section>
+
+
+</Chapter>
+
