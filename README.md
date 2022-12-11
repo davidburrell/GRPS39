@@ -5,7 +5,7 @@
 
 This package provides:
 
- - Access to the groups of order 1024
+ - Access to the groups of order 19683
 
 For further information see:
    - [Documentation](https://davidburrell.github.io/GRPS39/doc/chap0.html)
