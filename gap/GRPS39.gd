@@ -136,4 +136,6 @@ DeclareGlobalFunction("GRPS39_CheckoutDescendants");
 #! @Arguments G
 #! @Returns `list`
 DeclareAttribute("GRPS39_Heritage",IsGroup);
-DeclareGlobalFunction("FixGroupDescendants");
+DeclareGlobalFunction("GRPS39_ImmediateDescendantGroupShell");
+
+DeclareGlobalFunction("GRPS39_FixGroupDescendants");

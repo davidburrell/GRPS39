@@ -680,7 +680,7 @@ if GRPS39_Heritage(working)[1] > 9 and GRPS39_Heritage(working)[2] in ValueGloba
 
 	currentRank:=RankPGroup(working);
 	currentPClass:=PClassPGroup(working);
-	numDescendants:=NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
+	numDescendants:=GRPS39NumDescendants(GRPS39_Heritage(working)[1],GRPS39_Heritage(working)[2]);
 
 	Print(StringFormatted("Groups {}-{} have rank {} and pclass {} ## not available parent group {}#{}\n",i,i+numDescendants-1,currentRank,currentPClass,currentParentGroupOrder,currentParentGroupID));
 #there are 2 issues one is if i+numDescendants has the same rank and p-class as the enumerated one
@@ -756,7 +756,34 @@ fi;
 
 end);
 
-InstallGlobalFunction("FixGroupDescendants",function(order,id)
+InstallGlobalFunction("GRPS39_ImmediateDescendantGroupShell", function()
+# InstallGlobalFunction( SubmagmaWithInversesNC, function( M, gens )
+  local group_shell, S;
+
+	group_shell:=NewType(FamilyObj([]),IsGroup and IsAttributeStoringRep and IsFinitelyGeneratedGroup and IsFinite);
+
+	# S:=rec();
+	S:=Objectify(group_shell,rec());
+	return S;
+    # local K, S;
+
+    # # if IsEmpty( gens ) then
+    #   K:= NewType( FamilyObj(M),
+    #                    IsMagmaWithInverses
+    #                and IsTrivial
+    #                and IsAttributeStoringRep
+    #                and HasGeneratorsOfMagmaWithInverses);
+    #   S:=rec();
+    #   ObjectifyWithAttributes(S, K, GeneratorsOfMagmaWithInverses, [] );
+    # # else
+    # #   S:= MagmaWithInversesByGenerators(gens);
+    # # fi;
+    # # SetParent( S, M );
+    # # SetIsElementaryAbelian(S,false);
+    # return S;
+end );
+
+InstallGlobalFunction("GRPS39_FixGroupDescendants",function(order,id)
 
 local step,toReturn,desc;
 
@@ -767,7 +794,9 @@ desc:=List(PqDescendants(SmallGroup(order,id):StepSize:=step),x->CodePcGroup(x))
 toReturn:=[Length(desc)];
 Append(toReturn,desc);
 PrintTo(StringFormatted("{}.g",id),StringFormatted("desc_{}_{}:={};",order,id,toReturn));
-# return toReturn;
+PrintFormatted("File {}.g has been saved, move it to lib/Desc_{}/",id,order);
+# return toReturn
 
 
 end);
+
