@@ -59,32 +59,30 @@
 </ul>
 
 <div class="example"><pre>
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">SmallGroup(19683,1);</span>
-&lt;pc group of size 19683 with 9 generators&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">G:=SmallGroup(19683,1);</span>
 &lt;pc group of size 19683 with 9 generators&gt;
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RankPGroup(G);</span>
-3
+1
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PClassPGroup(G);</span>
-2
+9
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">GRPS39_Heritage(G);</span>
-[ 27, 5, 1 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H:=SmallGroup(19683,2); #this is a partially constructed group</span>
-&lt;pc group with 0 generators&gt;
+[ 6561, 1, 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">H:=SmallGroup(19683,546913);</span>
+&lt;group&gt; #this is a partially constructed group
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PClassPGroup(H);</span>
-2
+3
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RankPGroup(H);</span>
-4
+3
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">GRPS39_Heritage(H);</span>
-[ 81, 15, 1 ]
-<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">K:=SmallGroup(19683,3); #this is a partially constructed group</span>
-&lt;pc group with 0 generators&gt;
+[ 729, 122, 1 ]
+<span class="GAPprompt">gap&gt;</span> <span class="GAPinput">K:=SmallGroup(19683,546913+1);</span>
+&lt;group&gt; #this is a partially constructed group
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">PClassPGroup(K);</span>
-2
+3
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">RankPGroup(K);</span>
-4
+3
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">GRPS39_Heritage(K);</span>
-[ 81, 15, 2 ]
+[ 729, 122, 2 ]
 #notice that H,K have the same parent group but their age differs
 </pre></div>
 
