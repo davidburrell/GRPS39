@@ -94,7 +94,3 @@
   group is the position of the group among its siblings in the ordered list of
   their standard PC codes.[133X
   
-  [1X2.1-4 GRPS39_ImmediateDescendantGroupShell[101X
-  
-  [33X[1;0Y[29X[2XGRPS39_ImmediateDescendantGroupShell[102X( [3Xarg[103X ) [32X function[133X
-  

@@ -4,7 +4,6 @@
   
   [2XGRPS39_AvailableMap[102X 2.1-1 
   [2XGRPS39_Heritage[102X, for IsGroup 2.1-3 
-  [2XGRPS39_ImmediateDescendantGroupShell[102X 2.1-4 
   [2XGRPS39_InverseAvailableMap[102X 2.1-2 
   
   

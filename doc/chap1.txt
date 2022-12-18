@@ -58,13 +58,12 @@
   
   [30X    [33X[0;6YAge[133X
   
-  [33X[0;0YThe  groups  are  sorted  first by their parent group ids and then by the pc
-  codes  of  the  standard presentations for the groups. The data contained in
-  this  library  was used in the 2022 enumeration of the groups of order 19683
-  [Bur22]. The computational tools used were developed in the 2021 enumeration
-  of  the  groups  of  order 1024 [Bur21]. The available groups were generated
-  using  the  p-group generation algorithm [O'B90] as implemented in the ANUPQ
-  package  [GNOH19].  The  information  on the remaining groups was calculated
-  using  the  cohomological  methods for enumerating p-groups as introduced in
-  [EO99].[133X
+  [33X[0;0YThe  groups  are sorted first by their rank, then by p-class, then by parent
+  group ids and finally by age. The data contained in this library was used in
+  the 2022 enumeration of the groups of order 19683 [Bur22]. The computational
+  tools  used  were  developed  in the 2021 enumeration of the groups of order
+  1024  [Bur21].  The  available  groups  were  generated  using  the  p-group
+  generation  algorithm  [O'B90] as implemented in the ANUPQ package [GNOH19].
+  The   information   on   the  remaining  groups  was  calculated  using  the
+  cohomological methods for enumerating p-groups as introduced in [EO99].[133X
   
