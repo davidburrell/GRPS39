@@ -54,9 +54,7 @@ bibtex: |
       month =            {Jul},
       year =             {2022},
       note =             {GAP package},
-      howpublished =     {\href                        {https://davidburrell.github.io/GRPS39/}
-                          {\texttt{https://davidburrell.github.io/}\discretionary
-                          {}{}{}\texttt{GRPS39/}}},
+      howpublished =     {\href {https://davidburrell.github.io/GRPS39/} {\texttt{https://davidburrell.github.io/}\discretionary {}{}{}\texttt{GRPS39/}}},
       printedkey =       {Bur22}
     }
 
