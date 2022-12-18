@@ -110,7 +110,7 @@ This is an immediate descendant of 81#15 and is not available
 
 
 <ManSection>
-  <Func Arg="arg" Name="FixGroupDescendants" />
+  <Func Arg="arg" Name="GRPS39_ImmediateDescendantGroupShell" />
  <Description>
 <P/>
  </Description>

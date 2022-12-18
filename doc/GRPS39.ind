@@ -1,12 +1,10 @@
 \begin{theindex}
 
-  \item \texttt  {FixGroupDescendants}, \hyperpage{6}
-
-  \indexspace
-
   \item \texttt  {GRPS39{\textunderscore }AvailableMap}, \hyperpage{6}
   \item \texttt  {GRPS39{\textunderscore }Heritage}
     \subitem for IsGroup, \hyperpage{6}
+  \item \texttt  {GRP}\-\texttt  {S39{\textunderscore }}\-\texttt  {Immediate}\-\texttt  {Descendant}\-\texttt  {Group}\-\texttt  {Shell}, 
+		\hyperpage{6}
   \item \texttt  {GRP}\-\texttt  {S39{\textunderscore }}\-\texttt  {Inverse}\-\texttt  {AvailableMap}, 
 		\hyperpage{6}
 
