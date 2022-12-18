@@ -26,7 +26,7 @@ ID_AVAILABLE_FUNCS[layer_3_9] := function( size )
 end;
 
 ################# NEW CODE ###################################3
-if not IsBound(class_matrix_39) then Read("class_matrix_39.g"); fi;
+if not IsBound(class_matrix_39) then ReadPackage("GRPS39","gap/class_matrix_39.g"); fi;
 
 
 
@@ -150,12 +150,25 @@ GRPS39_label_group:=function(G)
 end;
 ##################### new access ######################################3
 SMALL_GROUP_FUNCS[ pos_3_9 ] := function( size, n, inforec )
-  local ancestry, heritage, toReturn, parent;
+  local ancestry, heritage, toRead, toReturn, parent;
+  # local ancestry, heritage, toReturn, parent;
   # local capableMaster, toRead, offset, order, step, parent_ID, parent_Order, heritage, toReturn, j, group_order, group, i,breakOuter,parent,enum_unavailable,initialLook,partial_construct;
 
     if n > inforec.number then 
         Error("there are just ",inforec.number," groups of order ",size );
     fi;
+# InstallGlobalFunction("GRPS39_CheckoutDescendants",function(parentGroup_Order,parentGroup_ID)
+#   local toRead, toReturn;
+
+# toRead:=StringFormatted("lib/Desc_{}/{}.g",parentGroup_Order,parentGroup_ID);
+# if ReadPackage("GRPS39",toRead) then
+# 	toReturn:= ValueGlobal(StringFormatted("desc_{}_{}",parentGroup_Order,parentGroup_ID));
+# 	return toReturn{[2..Length(toReturn)]};
+# else
+# 	Info(InfoDebug,1,StringFormatted("The presentations of the immediate descendants of {}#{} are not available",parentGroup_Order,parentGroup_ID));
+# 	return [];
+# fi;
+# end);
 
     if n <= inforec.number then
 	ancestry:=Flat(GRPS39_find_parent(n));
@@ -167,18 +180,34 @@ SMALL_GROUP_FUNCS[ pos_3_9 ] := function( size, n, inforec )
 	heritage.ID:=ancestry[2];
 	heritage.Age:=ancestry[3];
 
-	if GRPS39_find_class(n) = 2 and heritage.Order > 27 then
+	toRead:=StringFormatted("lib/Desc_{}/{}.g",heritage.Order,heritage.ID);
+	
+	if not ReadPackage("GRPS39",toRead) then
 		toReturn:=GRPS39_ImmediateDescendantGroupShell();
 		SetIsPGroup(toReturn,true);
-
 		SetGRPS39_Heritage(toReturn,[heritage.Order,heritage.ID,heritage.Age]);
-		SetPClassPGroup(toReturn,2);
+		SetPClassPGroup(toReturn,GRPS39_find_class(n));
 		#TODO this next statement is an artifact of how group shell are programmed
 		# SetIsElementaryAbelian(toReturn,false);
 		SetRankPGroup(toReturn,GRPS39_find_rank(n));
 		SetOrder(toReturn,3^9);
 		return toReturn;
+		
+
 	fi;
+
+	#if GRPS39_find_class(n) = 2 and heritage.Order > 27 then
+	#	toReturn:=GRPS39_ImmediateDescendantGroupShell();
+	#	SetIsPGroup(toReturn,true);
+
+	#	SetGRPS39_Heritage(toReturn,[heritage.Order,heritage.ID,heritage.Age]);
+	#	SetPClassPGroup(toReturn,2);
+	#	#TODO this next statement is an artifact of how group shell are programmed
+	#	# SetIsElementaryAbelian(toReturn,false);
+	#	SetRankPGroup(toReturn,GRPS39_find_rank(n));
+	#	SetOrder(toReturn,3^9);
+	#	return toReturn;
+	#fi;
 #we only ever checkout the descendants of a single group once
 	if not IsBound(SMALL_GROUP_LIB[3^9]) then
 		SMALL_GROUP_LIB[3^9]:=[];
@@ -413,3 +442,26 @@ Groups19683Information();
 
 end;
 
+GRPS39_check_groups_random:=function(n)
+  local block, i, G, parent, heritage, j;
+	block:=1000;
+	PrintFormatted("Working on Groups# {}-{}\n",1,block-1);
+	for j in [1..n] do
+		if j mod block = 0 then
+			PrintFormatted("Working on Groups# {}-{}\n",j,j+block-1);
+		fi;	
+		#here we take a random group in the range of groups of order 3^9
+		i:=Random(1,NumberSmallGroups(3^9));
+		G:=SmallGroup(3^9,i);
+		parent:=Flat(GRPS39_find_parent(GRPS39_label_group(G)));
+		Remove(parent,3);
+		heritage:=GRPS39_Heritage(G);
+		if parent = heritage then
+			# PrintFormatted("There is no issue with # {}\n parent:{} \n heritage:{}\n",i,parent,heritage);
+			# return true;
+		else
+			Error(StringFormatted("There is an issue with # {}\n parent:{} \n heritage:{}\n",i,parent,heritage));
+		fi;
+	od;
+	return true;
+end;

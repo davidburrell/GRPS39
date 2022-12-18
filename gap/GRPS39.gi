@@ -149,10 +149,17 @@ else
 fi;
 end);
 
+InstallGlobalFunction("GRPS39_IsAvailable",function(parentGroup_Order,parentGroup_ID)
+
+
+end);
+
+
 InstallGlobalFunction("CapableAndMissing",function()
   local capable_master, current, missing, toRead, order, id;
 
-capable_master:=[Capable_3,Capable_9,Capable_27,Capable_81,Capable_243,Capable_729,Capable_2187,Capable_6561];
+# capable_master:=[Capable_3,Capable_9,Capable_27,Capable_81,Capable_243,Capable_729,Capable_2187,Capable_6561];
+capable_master:=[Capable_3,Capable_9,Capable_27,Capable_81,Capable_243,Capable_729,Capable_2187];
 
 current:=1;
 missing:=[];
