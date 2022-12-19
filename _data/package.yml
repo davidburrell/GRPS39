@@ -1,5 +1,5 @@
 name: GRPS39
-version: "0.1"
+version: "0.0.1"
 license: "Artistic-2.0"
 date: 2022-07-31
 description: |
@@ -27,9 +27,9 @@ github: https://github.com/davidburrell/GRPS39
 
 downloads:
     - name: .tar.gz
-      url: https://github.com/davidburrell/GRPS39/archive/refs/tags/v.0.1.tar.gz
+      url: https://github.com/davidburrell/GRPS39/archive/refs/tags/v.0.0.1.tar.gz
     - name: .zip
-      url: https://github.com/davidburrell/GRPS39/archive/refs/tags/v.0.1.zip
+      url: https://github.com/davidburrell/GRPS39/archive/refs/tags/v.0.0.1.zip
 
 abstract: |
 
@@ -40,7 +40,7 @@ citeas: |
     <p class='BibEntry'>
     [<span class='BibKey'>Bur22</span>]   <b class='BibAuthor'>Burrell, D.</b>,
      <i class='BibTitle'>GRPS39, Library of the groups of order 19683,
-             Version 0.1</i>
+             Version 0.0.1</i>
      (<span class='BibYear'>2022</span>)<br />
     (<span class='BibNote'>GAP package</span>),
     <span class='BibHowpublished'><a href="https://davidburrell.github.io/GRPS39/">https://davidburrell.github.io/GRPS39/</a></span>.
@@ -48,9 +48,9 @@ citeas: |
     
 
 bibtex: |
-    @misc{ GRPS390.1,
+    @misc{ GRPS390.0.1,
       author =           {Burrell, D.},
-      title =            {{GRPS39}, Library of the groups of order 19683, {V}ersion 0.1},
+      title =            {{GRPS39}, Library of the groups of order 19683, {V}ersion 0.0.1},
       month =            {Jul},
       year =             {2022},
       note =             {GAP package},

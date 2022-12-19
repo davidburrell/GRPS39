@@ -10,7 +10,7 @@ SetPackageInfo( rec(
 
 PackageName := "GRPS39",
 Subtitle := "Library of the groups of order 19683",
-Version := "0.1",
+Version := "0.0.1",
 Date := "31/07/2022", # dd/mm/yyyy format
 License := "Artistic-2.0",
 
