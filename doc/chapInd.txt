@@ -2,7 +2,9 @@
   
   [1XIndex[101X
   
-  [2XGRPS39_Heritage[102X, for IsGroup 2.1-1 
+  [2XGroups19683Information[102X 2.1-1 
+  [2XGRPS39_CheckoutDescendants[102X 2.1-2 
+  [2XGRPS39_Heritage[102X, for IsGroup 2.1-3 
   
   
   -------------------------------------------------------
