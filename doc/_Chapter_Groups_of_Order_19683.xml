@@ -91,7 +91,7 @@ Age
 </Item>
 </List>
 <P/>
- The groups are sorted first by their parent group ids and then by the pc codes of the standard presentations for the groups. The data contained in this library was used in the 2022 enumeration of the groups of order 19683 <Cite Key="Burrell2022a"/>. The computational tools used were developed in the 2021 enumeration of the groups of order 1024 <Cite Key="Burrell2021a"/>. The available groups were generated using the p-group generation algorithm  <Cite Key="OBrien1990a"/> as implemented in the ANUPQ package <Cite Key="Gamble2019a"/>. The information on the remaining groups was calculated using the cohomological methods for enumerating p-groups as introduced in <Cite Key="Eick1999a"/>.
+ The groups are sorted first by their rank, then by p-class, then by parent group ids and finally by age. The data contained in this library was used in the 2022 enumeration of the groups of order 19683 <Cite Key="Burrell2022a"/>. The computational tools used were developed in the 2021 enumeration of the groups of order 1024 <Cite Key="Burrell2021a"/>. The available groups were generated using the p-group generation algorithm  <Cite Key="OBrien1990a"/> as implemented in the ANUPQ package <Cite Key="Gamble2019a"/>. The information on the remaining groups was calculated using the cohomological methods for enumerating p-groups as introduced in <Cite Key="Eick1999a"/>.
 <P/>
 </Section>
 

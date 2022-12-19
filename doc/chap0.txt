@@ -29,10 +29,9 @@
     1.1 [33X[0;0YOverview[133X
   2 [33X[0;0YFunctionality[133X
     2.1 [33X[0;0YMethods[133X
-      2.1-1 GRPS39_AvailableMap
-      2.1-2 GRPS39_InverseAvailableMap
+      2.1-1 Groups19683Information
+      2.1-2 GRPS39_CheckoutDescendants
       2.1-3 GRPS39_Heritage
-      2.1-4 GRPS39_ImmediateDescendantGroupShell
   
   
   [32X

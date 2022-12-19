@@ -94,6 +94,22 @@ GRPS39_R_G:=function(G)
 		# od;
 	fi;
 end;
+
+# GRPS39_R_G_N:=function(n)
+# 	local rank,toReturn;
+# 	# rank:=RankPGroup(G);
+# 	rank:=n;
+# 	# toReturn:=0;
+	
+# 	if rank = 1 then
+# 		return 0;
+# 	else
+# 		return Sum(row_totals_39{[1..rank-1]});
+# 		# for i in [1..rank-1] do
+# 		# 	toReturn:=toReturn + row_sum(class_matrix_39,i);
+# 		# od;
+# 	fi;
+# end;
 # GRPS39_C_G is the total number of groups of order $|G|$ with the same rank as $G$ by $p$-class strictly less than that of $G$
 GRPS39_C_G:=function(G)
   local sum, entry, parent;
@@ -114,6 +130,29 @@ GRPS39_C_G:=function(G)
 	fi;
 	
 end;
+
+# GRPS39_C_G_N:=function(r,n)
+#   local rank, pclass, sum, entry, parent;
+#   # local sum, entry, parent,c pclass;
+# 	rank:=r;
+# 	pclass := n;
+
+# 	if pclass = 1 then
+# 		return 0;
+# 	else
+# 	# local entry,sum, for;
+# 		sum:=0;
+# 		for entry in class_matrix_39[rank]{[1..pclass-1]} do
+# 			for parent in entry do
+# 				sum:=sum + parent[3];	
+# 			od;
+# 		od;
+# 		return sum;
+# 		# return row_sum(class_matrix_39[RankPGroup(G)]{[1..PClassPGroup(G)-1]});
+# 		# return Sum(column_totals{[1..PClassPGroup(G)-1]});
+# 	fi;
+	
+# end;
 
 GRPS39_P_G:=function(G)
   local rank, pclass, parent_ID, parents, parent_prec;
@@ -137,6 +176,31 @@ GRPS39_P_G:=function(G)
 	return Sum(List(parent_prec,x->x[3]));
 end;
 
+#we assume parent_ID is a [order,id]
+# GRPS39_P_G_P:=function(order,id,rank)
+#   local parent, pclass, parents, parent_prec;
+#   # local rank, pclass, parent_ID, parents, parent_prec;
+
+# 	# if IsElementaryAbelian(G) then
+# 	# 	return 0;
+# 	# fi;
+# 	parent_ID:=[order,id];
+# 	parent:=SmallGroup(parent_ID[1],parent_ID[2]);
+# 	rank:=RankPGroup(parent);
+# 	pclass:=PClassPGroup(parent)+1;
+
+# 	if  pclass = 1 then
+# 		return 0;
+# 	fi;
+	
+# 	# parent_ID:=GRPS39_Heritage(G){[1..2]};
+# 	Add(parent_ID,GRPS39NumDescendants(parent_ID[1],parent_ID[2]));
+# 	parents:=class_matrix_39[rank][pclass];
+# 	parent_prec:=parents{[1..Position(parents,parent_ID)-1]};
+
+# 	return Sum(List(parent_prec,x->x[3]));
+# end;
+
 GRPS39_A_G:=function(G)
 	if PClassPGroup(G)=1 then
 		return 1;
@@ -144,10 +208,62 @@ GRPS39_A_G:=function(G)
 
 	return GRPS39_Heritage(G)[3];
 end;
+GRPS39_Capable_Missing_IDS:=[ [ 81, 15 ], [ 243, 67 ], [ 729, 122 ], [ 729, 425 ], [ 729, 440 ], [ 729, 453 ], 
+  [ 729, 504 ], [ 2187, 6044 ], [ 2187, 6576 ], [ 2187, 9093 ], [ 2187, 9118 ], 
+  [ 2187, 9121 ], [ 2187, 9128 ], [ 2187, 9131 ], [ 2187, 9134 ], [ 2187, 9135 ], 
+  [ 2187, 9138 ], [ 2187, 9140 ], [ 2187, 9302 ], [ 2187, 9310 ],[6561,1396068],[6561,1396077] ];
+GRPS39_MISSING_IDS:=[ [ 91887186, 91953852 ], [ 355820170, 4032242074 ], [ 546913, 88541296 ], 
+  [ 92241644, 209726506 ], [ 209726507, 227782267 ], [ 227782268, 258162927 ], 
+  [ 4717651102, 5937761741 ], [ 274401608, 281443634 ], [ 304813802, 317529080 ], 
+  [ 4032242075, 4032242205 ], [ 4045509432, 4062606128 ], [ 4062606129, 4103654980 ], 
+  [ 4110319952, 4123052906 ], [ 4123052907, 4451185904 ], [ 4451185905, 4500755636 ], 
+  [ 4500755637, 4599685634 ], [ 4599685635, 4612426328 ], [ 4612426329, 4616681990 ], 
+  [ 5937761742, 5937811556 ], [ 5937874873, 5937876585 ], [ 5937876593, 5937876632 ], 
+  [ 5937876633, 5937876644 ] ];
+
+# print_table_warnings:=function()
+# 	for i in [1..Length(GRPS39_MISSING_IDS)] do
+# 		parent_ID:=GRPS39_Capable_Missing_IDS[i];
+# 		parent:=SmallGroup(parent_ID[1],parent_ID[2]);
+	
+# 		PrintFormatted("#Groups with IDS {}-{} are not available and are immediate descendants of {}#{} {},{}\n",GRPS39_MISSING_IDS[i][1],GRPS39_MISSING_IDS[i][2],parent_ID[1],parent_ID[2],RankPGroup(parent),PClassPGroup(parent)+1);
+
+# od;
+# end;
+
+# check_groups_labels:=function()
+#   local StartIndex, EndIndex, starting_working_group, ending_working_group, group;
+# 	for group in [1..Length(GRPS39_Capable_Missing_IDS)] do
+# 		StartIndex:=GRPS39_MISSING_IDS[group][1];
+# 		EndIndex:=GRPS39_MISSING_IDS[group][2];
+# 		starting_working_group:=GRPS39_Heritage(SmallGroup(3^9,StartIndex));
+# 		ending_working_group:=GRPS39_Heritage(SmallGroup(3^9,EndIndex));
+# 		PrintFormatted("{} {} {}\n",group,starting_working_group,ending_working_group);
+# od;
+# end;
+
+# GRPS39_labelsofChildren:=function(parent_ID)
+#   local parent, rank, pclass, siblings, start_index, end_index;
+# 	order:=parent_ID[1];
+# 	id:=parent_ID[2];
+
+# 	# parent:=SmallGroup(parent_ID[1],parent_ID[2]);
+# 	parent:=SmallGroup(order,id);
+# 	rank:=RankPGroup(parent);
+# 	pclass:=PClassPGroup(parent);
+# 	siblings:=GRPS39NumDescendants(order,id);	
+# 	# start_index:=GRPS39_P_G_P(order,id,rank) + GRPS39_R_G_N(rank) + GRPS39_C_G_N(rank,pclass+1)+1;
+# 	start_index:=GRPS39_P_G_P(order,id,rank) + GRPS39_R_G_N(rank) + GRPS39_C_G_N(rank,pclass+1)+1;
+# 	end_index:=start_index + siblings -1;
+	
+# 	return [start_index,end_index];
+
+# end;
 
 GRPS39_label_group:=function(G)
 	return GRPS39_A_G(G) + GRPS39_P_G(G)+ GRPS39_C_G(G) + GRPS39_R_G(G);
 end;
+
 ##################### new access ######################################3
 SMALL_GROUP_FUNCS[ pos_3_9 ] := function( size, n, inforec )
   local ancestry, heritage, toRead, toReturn, parent;
