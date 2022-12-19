@@ -4,7 +4,7 @@
   
   [1X2.1 [33X[0;0YMethods[133X[101X
   
-  [33X[0;0YOnce  the package is loaded the user may call [10XSmallGroup(1024,i)[110X and receive
+  [33X[0;0YOnce the package is loaded the user may call [10XSmallGroup(19683,i)[110X and receive
   either  a  group if available or a [13Xpartially constructed group[113X which has the
   following attributes set[133X
   
@@ -15,6 +15,8 @@
   [30X    [33X[0;6YHeritage[133X
   
   [30X    [33X[0;6YOrder[133X
+  
+  [33X[0;0YAdditional information can be obtained via [10XSmallGroupsInformation(19683)[110X.[133X
   
   [4X[32X  Example  [32X[104X
     [4X[25Xgap>[125X [27XG:=SmallGroup(19683,1);[127X[104X
@@ -52,5 +54,6 @@
   [33X[0;0YReturns  as  a  list  the  following  information for a group of order 19683
   loaded from the library [10X[ParentGroupID, ParentGroupOrder, Age][110X. The [13XAge[113X of a
   group is the position of the group among its siblings in the ordered list of
-  their standard PC codes.[133X
+  their  standard  PC  codes  (the  order  is  determined by the output of the
+  p-group generation algorithm).[133X
   

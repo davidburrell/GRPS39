@@ -38,7 +38,7 @@
 
 <h4>2.1 <span class="Heading">Methods</span></h4>
 
-<p>Once the package is loaded the user may call <code class="code">SmallGroup(1024,i)</code> and receive either a group if available or a <em>partially constructed group</em> which has the following attributes set</p>
+<p>Once the package is loaded the user may call <code class="code">SmallGroup(19683,i)</code> and receive either a group if available or a <em>partially constructed group</em> which has the following attributes set</p>
 
 
 <ul>
@@ -55,6 +55,8 @@
 
 </li>
 </ul>
+<p>Additional information can be obtained via <code class="code">SmallGroupsInformation(19683)</code>.</p>
+
 
 <div class="example"><pre>
 <span class="GAPprompt">gap&gt;</span> <span class="GAPinput">G:=SmallGroup(19683,1);</span>
@@ -91,7 +93,7 @@
 <div class="func"><table class="func" width="100%"><tr><td class="tdleft"><code class="func">&#8227; GRPS39_Heritage</code>( <var class="Arg">G</var> )</td><td class="tdright">(&nbsp;attribute&nbsp;)</td></tr></table></div>
 <p>Returns: <code class="code">list</code></p>
 
-<p>Returns as a list the following information for a group of order 19683 loaded from the library <code class="code">[ParentGroupID, ParentGroupOrder, Age]</code>. The <em>Age</em> of a group is the position of the group among its siblings in the ordered list of their standard PC codes.</p>
+<p>Returns as a list the following information for a group of order 19683 loaded from the library <code class="code">[ParentGroupID, ParentGroupOrder, Age]</code>. The <em>Age</em> of a group is the position of the group among its siblings in the ordered list of their standard PC codes (the order is determined by the output of the p-group generation algorithm).</p>
 
 
 <div class="chlinkprevnextbot">&nbsp;<a href="chap0_mj.html">[Top of Book]</a>&nbsp;  <a href="chap0_mj.html#contents">[Contents]</a>&nbsp;  &nbsp;<a href="chap1_mj.html">[Previous Chapter]</a>&nbsp;  &nbsp;<a href="chapBib_mj.html">[Next Chapter]</a>&nbsp;  </div>
