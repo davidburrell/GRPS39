@@ -62,7 +62,7 @@ InstallGlobalFunction("Groups19683Information",function()
 Print( "\n");
 Print( "###### Groups Information ###########################\n");
 Print( "There are 5,937,876,645 groups of order 19,683\n");
-Print( "They are sorted by parent group ID and then by the pccode of their standard presentations\n\n");
+Print( "They are sorted by rank, p-class, parent group and then age\n\n");
 Print( "Group 	1 			has rank 1 and pclass 9\n");
 Print( "Groups 	2-12 			have rank 2 and pclass 3\n");
 Print( "Groups 	13-1431 		have rank 2 and pclass 4\n");
@@ -756,19 +756,19 @@ InstallGlobalFunction("GRPS39_ImmediateDescendantGroupShell", function()
 	return S;
 end );
 
-InstallGlobalFunction("GRPS39_FixGroupDescendants",function(order,id)
+# InstallGlobalFunction("GRPS39_FixGroupDescendants",function(order,id)
 
-local step,toReturn,desc;
+# local step,toReturn,desc;
 
-step:=9-PrimePowersInt(order)[2];
+# step:=9-PrimePowersInt(order)[2];
 
-desc:=List(PqDescendants(SmallGroup(order,id):StepSize:=step),x->CodePcGroup(x));
+# desc:=List(PqDescendants(SmallGroup(order,id):StepSize:=step),x->CodePcGroup(x));
 
-toReturn:=[Length(desc)];
-Append(toReturn,desc);
-PrintTo(StringFormatted("{}.g",id),StringFormatted("desc_{}_{}:={};",order,id,toReturn));
-PrintFormatted("File {}.g has been saved, move it to lib/Desc_{}/",id,order);
+# toReturn:=[Length(desc)];
+# Append(toReturn,desc);
+# PrintTo(StringFormatted("{}.g",id),StringFormatted("desc_{}_{}:={};",order,id,toReturn));
+# PrintFormatted("File {}.g has been saved, move it to lib/Desc_{}/",id,order);
 
 
-end);
+# end);
 

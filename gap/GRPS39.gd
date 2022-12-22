@@ -133,7 +133,7 @@ DeclareGlobalFunction("GRPS39NumDescendants");
 #! 
 #! ###### Groups Information ###########################
 #! There are 5,937,876,645 groups of order 19,683
-#! They are sorted by parent group ID and then by the pccode of their standard presentations
+#! They are sorted by rank, p-class, parent group and then age
 #! 
 #! Group 	1 			has rank 1 and pclass 9
 #! Groups 	2-12 			have rank 2 and pclass 3
@@ -209,4 +209,4 @@ DeclareAttribute("GRPS39_Heritage",IsGroup);
 
 DeclareGlobalFunction("GRPS39_ImmediateDescendantGroupShell");
 
-DeclareGlobalFunction("GRPS39_FixGroupDescendants");
+# DeclareGlobalFunction("GRPS39_FixGroupDescendants");
