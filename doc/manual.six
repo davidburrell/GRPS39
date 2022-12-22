@@ -1,0 +1,25 @@
+#SIXFORMAT  GapDocGAP
+HELPBOOKINFOSIXTMP := rec(
+encoding := "UTF-8",
+bookname := "GROUPS39",
+entries :=
+[ [ "Title page", ".", [ 0, 0, 0 ], 1, 1, "title page", "X7D2C85EC87DD46E5" ], 
+  [ "Table of Contents", ".-1", [ 0, 0, 1 ], 24, 2, "table of contents", "X8537FEB07AF2BEC8" 
+     ], [ "\033[1X\033[33X\033[0;-2YGroups of Order 19683\033[133X\033[101X", "1", 
+      [ 1, 0, 0 ], 1, 3, "groups of order 19683", "X79A8D55C7818F30C" ], 
+  [ "\033[1X\033[33X\033[0;-2YOverview\033[133X\033[101X", "1.1", [ 1, 1, 0 ], 4, 3, 
+      "overview", "X8389AD927B74BA4A" ], 
+  [ "\033[1X\033[33X\033[0;-2YFunctionality\033[133X\033[101X", "2", [ 2, 0, 0 ], 1, 5, 
+      "functionality", "X87F1120883F5B4D0" ], 
+  [ "\033[1X\033[33X\033[0;-2YMethods\033[133X\033[101X", "2.1", [ 2, 1, 0 ], 4, 5, 
+      "methods", "X8606FDCE878850EF" ], 
+  [ "Bibliography", "bib", [ "Bib", 0, 0 ], 1, 8, "bibliography", "X7A6F98FD85F02BFE" ], 
+  [ "References", "bib", [ "Bib", 0, 0 ], 1, 8, "references", "X7A6F98FD85F02BFE" ], 
+  [ "Index", "ind", [ "Ind", 0, 0 ], 1, 9, "index", "X83A0356F839C696F" ], 
+  [ "\033[2XGroups19683Information\033[102X", "2.1-1", [ 2, 1, 1 ], 49, 6, 
+      "groups19683information", "X80266EDF79CBEF34" ], 
+  [ "\033[2XGRPS39_CheckoutDescendants\033[102X", "2.1-2", [ 2, 1, 2 ], 127, 7, 
+      "grps39_checkoutdescendants", "X7854930A7A85DA52" ], 
+  [ "\033[2XGRPS39_Heritage\033[102X for IsGroup", "2.1-3", [ 2, 1, 3 ], 131, 7, 
+      "grps39_heritage for isgroup", "X85731F0B870514FD" ] ]
+);
