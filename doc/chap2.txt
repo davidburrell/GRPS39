@@ -58,7 +58,7 @@
     [4X[28X[128X[104X
     [4X[28X###### Groups Information ###########################[128X[104X
     [4X[28XThere are 5,937,876,645 groups of order 19,683[128X[104X
-    [4X[28XThey are sorted by parent group ID and then by the pccode of their standard presentations[128X[104X
+    [4X[28XThey are sorted by rank, p-class, parent group and then age[128X[104X
     [4X[28X[128X[104X
     [4X[28XGroup 	1 			has rank 1 and pclass 9[128X[104X
     [4X[28XGroups 	2-12 			have rank 2 and pclass 3[128X[104X
