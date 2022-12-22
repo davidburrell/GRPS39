@@ -18,7 +18,7 @@ For further information see:
 2. Setup the lib directory:
 	1. Download descendants-lib.tar.gz from [here](https://www.dropbox.com/s/2c57hkan7v4u97q/descendants-lib-39.tar.gz?dl=0)
 	2. Unpack archive into package folder via:
-	 `tar -xvf descendants-lib.tar.gz -C ~/gap/pkg/GRPS39` 
+	 `tar -xvf descendants-lib-39.tar.gz -C ~/gap/pkg/GRPS39` 
 	 (change to match your gap installation)
 	3. The package directory should now resemble the following
 ```bash
